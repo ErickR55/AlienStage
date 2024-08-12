@@ -7,4 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".ResenaActivity">
 
+    <!-- activity_reviews.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RecyclerView
+            android:id="@+id/reviewsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="569dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/reviewEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu reseña" />
+
+        <Button
+            android:id="@+id/submitReviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Reseña" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
